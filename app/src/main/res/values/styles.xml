@@ -1,0 +1,55 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme_Full_Screen" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <!-- Application theme. -->
+    <!-- <style name="AppTheme" parent="AppBaseTheme"> -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+        <!-- <item name="actionModeSplitBackground">@drawable/actionbar_split_bg</item> -->
+        <!-- <item name="android:windowBackground">@android:color/transparent</item> -->
+        <!-- <item name="android:windowIsTranslucent">true</item> -->
+        <item name="android:actionBarStyle">@style/my_actionbar_style</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <!-- Splash Button Start -->
+    <style name="splash_btn_start" parent="android:Widget.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">10dip</item>
+        <item name="android:background">@drawable/splash_btn_start</item>
+    </style>
+
+    <!-- Splash Button Regist -->
+    <style name="splash_btn_regist" parent="android:Widget.Button">
+        <item name="android:textColor">@color/splash_regist_black</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">10dip</item>
+        <item name="android:background">@drawable/splash_btn_regist</item>
+    </style>
+
+    <style name="my_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:backgroundSplit">#88000000</item>
+    </style>
+
+</resources>

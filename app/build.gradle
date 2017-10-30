@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId 'jp.co.tegaraashi.Appcooking19'
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "3.3.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def formatDate = new Date().format('yyyyMMddhhmm')
+                    def newName = output.outputFile.name
+                    newName = newName.replace('app', 'Test アプリクッキング')
+                    newName = newName.replace('-release', '_v' + formatDate)
+                    output.outputFile = new File(output.outputFile.parent, newName)
+                }
+            }
+        }
+
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.1.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.facebook.android:facebook-android-sdk:4.16.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('libs/android-async-http-1.4.3.jar')
+    compile files('libs/bundlehelper.jar')
+    //    compile files('libs/gcm.jar')
+    compile 'com.google.android.gms:play-services-gcm:10.0.1'
+    compile files('libs/android-query-full.0.26.8.jar')
+    compile files('libs/httpimageloader.jar')
+    compile files('libs/volley.jar')
+    compile project(':library-pull-to-refresh')
+    compile project(':captureActivity')
+}

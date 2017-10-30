@@ -1,0 +1,281 @@
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userFlipper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/header_margin"
+    android:background="#000000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/setting_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/action_bar_height">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:orientation="vertical">
+
+                <include layout="@layout/fragment_stamp_register" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:padding="@dimen/margin_10dp"
+                    android:text="PUSH通知設定"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/notifyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/block_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="アプリからのお知らせ"
+                        android:textColor="@color/white" />
+
+                    <ToggleButton
+                        android:id="@+id/toggle_enable_push"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="0"
+                        android:background="@drawable/toggle_selector"
+                        android:checked="true"
+                        android:gravity="right"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/setting_userRegist_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:padding="@dimen/margin_10dp"
+                    android:text="ユーザー情報登録"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/setting_userRegistLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/block_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="ユーザー情報の登録・設定"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/Button01"
+                            android:layout_width="29dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_weight="0.16"
+                            android:background="@color/transparent"
+                            android:text="〉"
+                            android:textColor="@color/white"
+                            android:textColorLink="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:padding="@dimen/margin_10dp"
+                    android:text="会社情報"
+                    android:textColor="@color/white" />
+
+                <RelativeLayout
+                    android:id="@+id/companyInfoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/block_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/setting_shopName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_homepage"
+                        android:layout_width="29dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="0.16"
+                        android:background="@color/transparent"
+                        android:text="〉"
+                        android:textColor="@color/white"
+                        android:textColorLink="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/setting_inqueryLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@color/block_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="お問い合わせ"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/settings_inquery_btn"
+                            android:layout_width="29dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_weight="0.16"
+                            android:background="@color/transparent"
+                            android:text="〉"
+                            android:textColor="@color/white"
+                            android:textColorLink="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:padding="@dimen/margin_10dp"
+                    android:text="その他"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/settings_version_btn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="このアプリについて　　　　〉"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/setting_versionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/block_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="このアプリについて"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/settings_version_detail_btn"
+                            android:layout_width="29dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_weight="0.16"
+                            android:background="@color/transparent"
+                            android:text="〉"
+                            android:textColor="@color/white"
+                            android:textColorLink="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_10dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:text="@string/tv_register_ok"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="54dp" />
+
+</ViewFlipper>

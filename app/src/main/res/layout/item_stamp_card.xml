@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="@dimen/padding_very_small"
+        android:paddingLeft="@dimen/padding_very_small"
+        android:text="@string/stamp_default_date"
+        android:textSize="@dimen/text_size_very_small"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_number_stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/padding_small"
+        android:text="@string/txt_1"
+        android:textColor="@color/stamp_number_color"
+        android:textSize="@dimen/padding_normal"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imv_stamp_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/margin_5dp"
+        android:src="@drawable/stamp_1"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/line_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dot_line_gridview"
+        android:orientation="vertical" />
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="fill_vertical|center"
+    android:layout_marginBottom="@dimen/margin_20dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="79dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/news_icon_width"
+            android:layout_height="@dimen/news_icon_height"
+            android:src="@drawable/no_image"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/news_status"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="NEW"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/news_index_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="L"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/news_list_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:layout_weight="4"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:lines="4"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/news_list_time"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|bottom"
+            android:layout_marginTop="40dp"
+            android:background="@color/transparent"
+            android:gravity="right|center_vertical"
+            android:lines="1"
+            android:padding="10dp"
+            android:text="----/--/--"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/news_list_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="@dimen/margin_10dp"
+        android:autoLink="all"
+        android:gravity="left"
+        android:singleLine="false"
+        android:text="Text"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/news_image_view"
+            android:layout_width="@dimen/news_img_width"
+            android:layout_height="@dimen/news_img_height"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <WebView
+            android:id="@+id/news_web_view"
+            android:layout_width="@dimen/news_img_width"
+            android:layout_height="@dimen/news_img_height"
+            android:layout_gravity="center" />
+
+        <VideoView
+            android:id="@+id/news_video_view"
+            android:layout_width="@dimen/news_img_width"
+            android:layout_height="@dimen/news_img_height"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/news_bg_buttom_line"
+        android:orientation="vertical"
+        android:paddingTop="1dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/news_bg_buttom"
+            android:padding="@dimen/margin_10dp">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

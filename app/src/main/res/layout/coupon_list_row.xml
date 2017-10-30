@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <FrameLayout
+        android:layout_width="@dimen/menu_row_img_width"
+        android:layout_height="@dimen/menu_row_img_height"
+        android:layout_marginRight="@dimen/margin_3dp"
+        android:background="@color/transparent"
+        android:visibility="gone" >
+
+        <!-- ローディング -->
+
+        <ProgressBar
+            android:id="@+id/menu_loading_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <!-- コンテンツ用 -->
+
+        <ImageView
+            android:id="@+id/menu_list_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="15dp" >
+
+        <ProgressBar
+            android:id="@+id/coupon_image_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/coupon_custom_image_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitStart" />
+
+        <ImageView
+            android:id="@+id/coupon_custom_image"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:cropToPadding="false"
+            android:scaleType="fitStart" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/coupon_top"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="@drawable/coupon_bg_01_t"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/coupon_list_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/transparent"
+                    android:text="Title"
+                    android:textColor="@color/white_alpha"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/coupon_discount_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center|bottom" >
+
+                    <TextView
+                        android:id="@+id/couponDiscountNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="90sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/couponDiscountLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%off"
+                        android:textColor="@color/white"
+                        android:textSize="90sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/coupon_list_descr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="sub_title"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/coupon_list_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Title2"
+                    android:textColor="@color/white"
+                    android:textSize="29sp"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/policyBtn"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_corners"
+                    android:text="ご注意事項"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/coupon_bg_01_b"
+                android:visibility="gone" >
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/couponLimitLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/coupon_bg_01_b"
+                android:gravity="center"
+                android:nextFocusDown="@drawable/coupon_bg_01_b" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/coupon_limit_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="有効期限"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/coupon_end_datetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="15dp"
+                        android:text="----/--/--"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/useBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/transparent"
+                        android:text="使用する"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/couponUsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/coupon_sumi"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

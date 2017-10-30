@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="splash_movie_bg">#3c3b3d</color>
+    <color name="spot_green">#15a091</color>
+    <color name="white">#ffffff</color>
+    <color name="white_alpha">#bfffffff</color>
+    <color name="splash_start_green">#00beb3</color>
+    <color name="splash_regist_white">#ffffff</color>
+    <color name="splash_regist_black">#24282b</color>
+    <color name="drawer_username_txt">#ffffff</color>
+    <color name="drawer_email_txt">#ffffff</color>
+    <color name="main_view_bg">#3c3b3d</color>
+    <color name="img_bg">#eeeeee</color>
+    <color name="main_view_bg_default">#00AA84</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#0f79a5</color>
+    <color name="block_bg">#40ffffff</color>
+    <color name="iine_blue">#0000ff</color>
+    <color name="iine_gray">#7a7a7a</color>
+    <color name="default_bg">#000000</color>
+
+    <!-- News Start -->
+    <color name="news_bg">#d3d6db</color>
+    <color name="news_bg_buttom">#fafafa</color>
+    <color name="news_bg_buttom_line">#f0f0f0</color>
+    <color name="news_buttom_button">#81848b</color>
+    <color name="news_date">#939393</color>
+    <!-- News End -->
+
+    <!--  Stamp card -->
+    <color name="main_color">#13a461</color>
+    <color name="sub_main_color">#48af82</color>
+    <color name="action_bar_color">#00aa84</color>
+    <color name="stamp_hint_color">#9c999a</color>
+    <color name="stamp_dialog_button_normal">#6ec3b0</color>
+    <color name="stamp_dialog_button_press">#37ae92</color>
+    <color name="stamp_color_index">#60ffffff</color>
+    <color name="stamp_number_color">#c3bdb8</color>
+    <color name="stamp_stoke_grid_view">#b5b5b5</color>
+    <color name="black">#000000</color>
+    <!-- Register -->
+    <color name="backgroud_content_register">#4ebb89</color>
+    <color name="color_hint_stamp_card">#e6e6e6</color>
+</resources>

@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/header_margin"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/coupon_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/coupon_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/coupon_blank_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="100dp"
+            android:text="新しいクーポンはありません。"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/coupon_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/footer_icon_d"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/coupon_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollingCache="false"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@android:id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:overScrollMode="ifContentScrolls">
+
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/coupon_main_view_caution_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#cc000000"
+        android:paddingBottom="50dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/coupon_main_view_caution_text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/round_corner"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:textColor="#ffffff" />
+    </FrameLayout>
+    <!-- Caution: Pre -->
+    <FrameLayout
+        android:id="@+id/coupon_main_view_caution_wrapper2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#cc000000"
+        android:paddingBottom="50dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/coupon_main_view_caution_text2"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/round_corner"
+            android:padding="10dp"
+            android:text="@string/coupon_caution"
+            android:textColor="#ffffff" />
+    </FrameLayout>
+
+    <!-- Caution: Coupon -->
+    <FrameLayout
+        android:id="@+id/coupon_rule_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#66000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/coupon_rule_box"
+            android:layout_width="280dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_corner"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/btn_close" />
+
+                <TextView
+                    android:id="@+id/coupon_rule_box_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ご注意事項"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+            </FrameLayout>
+
+            <ScrollView
+                android:layout_width="260dp"
+                android:layout_height="230dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/coupon_rule_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:singleLine="false"
+                    android:textColor="#ffffff" />
+
+            </ScrollView>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

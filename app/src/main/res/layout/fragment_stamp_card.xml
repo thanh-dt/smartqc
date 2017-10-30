@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color">
+
+    <ImageView
+        android:id="@+id/setting_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:layout_marginLeft="@dimen/margin_30dp"
+        android:layout_marginRight="@dimen/margin_30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_stamp_card_frame"
+        android:paddingBottom="@dimen/margin_20dp"
+        android:paddingLeft="@dimen/margin_50dp"
+        android:paddingRight="@dimen/margin_50dp"
+        android:paddingTop="@dimen/margin_40dp">
+
+        <ImageView
+            android:id="@+id/imv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="@dimen/padding_small"
+            android:src="@drawable/ic_king_stamp_card" />
+
+        <View
+            android:id="@+id/line_one"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/imv_icon"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/mobile_mem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:text="@string/stamp_mobile_member"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mobile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobile_mem"
+            android:layout_centerHorizontal="true"
+            android:text="@string/stamp_main_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large" />
+
+        <View
+            android:id="@+id/line_two"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/mobile_name"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/ll_no_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_two"
+            android:layout_marginTop="@dimen/padding_large"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_no_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stamp_name_number_no_value"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_title" />
+
+            <TextView
+                android:id="@+id/tv_no_user_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xlarge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_go_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_no_user"
+            android:layout_marginTop="@dimen/padding_small"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_button_go_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:maxWidth="140dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xlarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_main_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/stamp_button_small_go"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_go_main"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:text="@string/stamp_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_sub" />
+
+        <TextView
+            android:id="@+id/tv_copy_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/padding_small"
+            android:text="@string/stamp_coopy_right"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/snsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:background="@color/block_bg" >
+
+    <ImageButton
+        android:id="@+id/fbBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_weight="6"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/top_block_sns_icon_facebook"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/twBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_weight="6"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/top_block_sns_icon_twitter"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/gpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_weight="6"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/top_block_sns_icon_google"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/ytBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_weight="6"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/top_block_sns_icon_youtube"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/amBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_weight="6"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/top_block_sns_icon_ameba"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/lineBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_weight="6"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/top_block_sns_icon_line"
+        android:visibility="gone" />
+
+</LinearLayout>

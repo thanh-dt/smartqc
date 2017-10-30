@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_around_dialog"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/padding_normal"
+        android:text="@string/stamp_dialog_using_title"
+        android:maxLines="2"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_title_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/padding_very_small"
+        android:text="@string/stamp_dialog_using_content_one"
+        android:textSize="@dimen/text_size_title" />
+
+    <TextView
+        android:id="@+id/tv_title_sub_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/padding_very_small"
+        android:text="@string/stamp_dialog_using_content_two"
+        android:textSize="@dimen/text_size_title" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:padding="@dimen/padding_very_small"
+        android:text="@string/stamp_dialog_using_content_three"
+        android:textSize="@dimen/text_size_title" />
+
+    <TextView
+        android:id="@+id/tv_content_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:layout_marginLeft="@dimen/margin_5dp"
+        android:padding="@dimen/padding_very_small"
+        android:text="@string/stamp_dialog_using_content_four"
+        android:textSize="@dimen/text_size_title" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/stamp_stoke_grid_view" />
+
+    <LinearLayout
+        android:id="@+id/ll_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_white_left"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/stamp_dialog_cancel"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/line_two"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/stamp_stoke_grid_view" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_white"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/stamp_dialog_ok"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

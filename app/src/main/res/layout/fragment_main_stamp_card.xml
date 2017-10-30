@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color" >
+
+    <ImageView
+        android:id="@+id/setting_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:id="@+id/scroll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:paddingBottom="@dimen/action_bar_height">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_normal"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingRight="@dimen/padding_normal"
+            android:paddingTop="@dimen/padding_normal">
+
+            <include layout="@layout/layout_stamp_one" />
+
+            <LinearLayout
+                android:id="@+id/ll_stamp_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:background="@color/block_bg"
+                android:orientation="vertical">
+
+                <app.com.hss.cooking.magatama.stampcard.TextViewW6
+                    android:id="@+id/tv_stamp_two_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_small"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:paddingTop="@dimen/padding_small"
+                    android:text="@string/stamp_main_title_one"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_normal"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view_stamp_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" />
+
+                <app.com.hss.cooking.magatama.stampcard.TextViewW3
+                    android:id="@+id/tv_stamp_two_title_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_small"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:paddingTop="@dimen/padding_small"
+                    android:text="@string/stamp_main_content_one"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_stamp_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:background="@color/block_bg"
+                android:orientation="vertical">
+
+                <app.com.hss.cooking.magatama.stampcard.TextViewW6
+                    android:id="@+id/tv_stamp_three_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_small"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:paddingTop="@dimen/padding_small"
+                    android:text="@string/stamp_main_title_two"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_normal"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view_stamp_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" />
+
+                <app.com.hss.cooking.magatama.stampcard.TextViewW3
+                    android:id="@+id/tv_stamp_three_title_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:paddingTop="@dimen/padding_normal"
+                    android:text="@string/stamp_main_content_two"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_normal" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_using_stamp" />
+
+            <include layout="@layout/layout_stamp_share" />
+
+            <LinearLayout
+                android:id="@+id/ll_stamp_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:background="@color/block_bg"
+                android:orientation="vertical">
+
+                <app.com.hss.cooking.magatama.stampcard.TextViewW6
+                    android:id="@+id/tv_stamp_footer_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_small"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:paddingTop="@dimen/padding_small"
+                    android:text="@string/stamp_footer_title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_normal"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view_stamp_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" />
+
+                <ScrollView
+                    android:id="@+id/src_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_policy_stamp"
+                    android:layout_marginBottom="@dimen/padding_normal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_lopicy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <app.com.hss.cooking.magatama.stampcard.TextViewW3
+                            android:id="@+id/tv_stamp_footer_title_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/padding_normal"
+                            android:paddingLeft="@dimen/padding_large"
+                            android:paddingRight="@dimen/padding_normal"
+                            android:paddingTop="@dimen/padding_normal"
+                            android:text="@string/stamp_footer_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_normal" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

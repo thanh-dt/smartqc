@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_promot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/block_bg"
+    android:orientation="vertical">
+
+    <app.com.hss.cooking.magatama.stampcard.TextViewW6
+        android:id="@+id/tv_using_stamp_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingTop="@dimen/padding_small"
+        android:text="@string/stamp_using_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_normal"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view_line_stamp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <app.com.hss.cooking.magatama.stampcard.TextViewW3
+        android:id="@+id/tv_no_promotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingTop="@dimen/padding_normal"
+        android:text="@string/msg_no_promot"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_normal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_container_stamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+    <!--<app.com.hss.cooking.magatama.stampcard.ExpandableHeightListView-->
+    <!--android:id="@+id/list_promotion"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:divider="@color/white"-->
+    <!--android:dividerHeight="1dp"-->
+    <!--android:fadingEdge="none"-->
+    <!--android:focusable="false"-->
+    <!--android:focusableInTouchMode="false"-->
+    <!--android:scrollbars="none" >-->
+    <!--</app.com.hss.cooking.magatama.stampcard.ExpandableHeightListView>-->
+
+</LinearLayout>

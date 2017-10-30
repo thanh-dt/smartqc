@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/block_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_normal">
+
+    <RelativeLayout
+        android:id="@+id/ll_top_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_title_top_one"
+            android:layout_width="@dimen/size_button_main"
+            android:layout_height="@dimen/size_button_height_main"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_dialog_stamp"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp"
+            android:paddingTop="@dimen/margin_5dp"
+            android:text="@string/stamp_main_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_sub" />
+
+        <app.com.hss.cooking.magatama.stampcard.TextViewW6
+            android:id="@+id/txt_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/padding_small"
+            android:text="@string/stamp_card"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_main_name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/stamp_name_number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_stamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_normal">
+
+        <app.com.hss.cooking.magatama.stampcard.HeaderGridView
+            android:id="@+id/gv_content_stamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_around_gridview"
+            android:choiceMode="singleChoice"
+            android:horizontalSpacing="1dp"
+            android:numColumns="5"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_get_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20dp"
+        android:text="@string/stamp_button_qr_code"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_normal" />
+
+    <View
+        android:id="@+id/imv_dot_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:layout_marginTop="@dimen/padding_small"
+        android:background="@drawable/stamp_dot_line"
+        android:contentDescription="@string/app_name" />
+
+    <app.com.hss.cooking.magatama.stampcard.TextViewW3
+        android:id="@+id/tv_main_sub_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stamp_main_sub_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_normal" />
+
+</LinearLayout>

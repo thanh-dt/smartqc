@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_normal"
+    android:paddingBottom="@dimen/action_bar_height"
+    android:paddingTop="@dimen/action_bar_height">
+
+    <app.com.hss.cooking.magatama.stampcard.TextViewW6
+        android:id="@+id/tv_title_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:text="@string/tv_title_config_setting"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/view_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/block_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_normal">
+
+        <app.com.hss.cooking.magatama.stampcard.TextViewW6
+            android:id="@+id/tv_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_name_register"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <app.com.hss.cooking.magatama.stampcard.EditTextRegister
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="right"
+            android:hint="@string/tv_hint_edittext_register"
+            android:textColor="@color/white"
+            android:textColorHint="@color/color_hint_stamp_card" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@color/block_bg">
+
+        <app.com.hss.cooking.magatama.stampcard.TextViewW6
+            android:id="@+id/tv_title_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/tv_title_sex"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_normal"
+            android:layout_toRightOf="@id/tv_title_sex"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:entries="@array/sex"
+            android:focusable="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@color/block_bg"
+        android:padding="@dimen/padding_normal">
+
+        <app.com.hss.cooking.magatama.stampcard.TextViewW6
+            android:id="@+id/tv_title_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/tv_title_birthday"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imv_arrow_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/register_arrow" />
+
+        <TextView
+            android:id="@+id/tv_sub_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/imv_arrow_birth"
+            android:paddingRight="@dimen/padding_small"
+            android:text="@string/tv_sub_sex"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@color/block_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_normal"
+        android:visibility="visible">
+
+        <app.com.hss.cooking.magatama.stampcard.TextViewW6
+            android:id="@+id/tv_title_four"
+            android:layout_width="@dimen/width_of_title_register"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/tv_name_register"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <app.com.hss.cooking.magatama.stampcard.EditTextRegister
+            android:id="@+id/edt_name_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="right"
+            android:hint="@string/tv_hint_edittext_register"
+            android:textColor="@color/white"
+            android:textColorHint="@color/color_hint_stamp_card" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@color/block_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_normal"
+        android:visibility="visible">
+
+        <app.com.hss.cooking.magatama.stampcard.TextViewW6
+            android:id="@+id/tv_title_five"
+            android:layout_width="@dimen/width_of_title_register"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/tv_name_register"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <app.com.hss.cooking.magatama.stampcard.EditTextRegister
+            android:id="@+id/edt_name_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="right"
+            android:hint="@string/tv_hint_edittext_register"
+            android:textColor="@color/white"
+            android:textColorHint="@color/color_hint_stamp_card" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@color/block_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_normal"
+        android:visibility="visible">
+
+        <app.com.hss.cooking.magatama.stampcard.TextViewW6
+            android:id="@+id/tv_title_six"
+            android:layout_width="@dimen/width_of_title_register"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/tv_name_register"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <app.com.hss.cooking.magatama.stampcard.EditTextRegister
+            android:id="@+id/edt_name_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="right"
+            android:hint="@string/tv_hint_edittext_register"
+            android:textColor="@color/white"
+            android:textColorHint="@color/color_hint_stamp_card" />
+    </LinearLayout>
+
+</LinearLayout>

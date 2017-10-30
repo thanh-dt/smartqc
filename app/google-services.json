@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "39877552959",
+    "firebase_url": "https://appcooking-9553f.firebaseio.com",
+    "project_id": "appcooking-9553f",
+    "storage_bucket": "appcooking-9553f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39877552959:android:f17ebee7035a8d3a",
+        "android_client_info": {
+          "package_name": "jp.co.tegaraashi.Appcooking19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39877552959-34noplhn5j1ebphe3glndo014kh0nepu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jp.co.tegaraashi.Appcooking19",
+            "certificate_hash": "14cd0dd0035acce6896e519a28e3bc22f03a8e02"
+          }
+        },
+        {
+          "client_id": "39877552959-mik9dd3snukv7h7k6kqv721r7ia75581.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCKHJ5gk6PO_Zy-MiAaw18yCeG6CJdrCo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39877552959-mik9dd3snukv7h7k6kqv721r7ia75581.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

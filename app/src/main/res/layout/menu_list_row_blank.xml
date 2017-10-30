@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="@dimen/margin_20dp"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="@dimen/menu_row_img_width"
+        android:layout_height="@dimen/menu_row_img_height"
+        android:layout_marginRight="@dimen/margin_3dp"
+        android:background="@color/transparent" >
+
+        <!-- ローディング -->
+
+        <!-- コンテンツ用 -->
+    </FrameLayout>
+
+</LinearLayout>

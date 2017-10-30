@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_share"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/padding_normal"
+    android:background="@color/block_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_normal" >
+
+    <app.com.hss.cooking.magatama.stampcard.TextViewW6
+        android:id="@+id/tv_share_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingTop="@dimen/padding_small"
+        android:text="@string/stamp_share_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_normal"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view_share"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <app.com.hss.cooking.magatama.stampcard.TextViewW3
+        android:id="@+id/tv_sub_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingTop="@dimen/padding_small"
+        android:text="@string/stamp_share_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_normal" />
+
+    <RelativeLayout
+        android:id="@+id/rl_share_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_large"
+        android:paddingTop="@dimen/padding_small" >
+
+        <ImageView
+            android:id="@+id/imv_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_stamp_line" />
+
+        <app.com.hss.cooking.magatama.stampcard.TextViewW6
+            android:id="@+id/tv_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_toRightOf="@id/imv_line"
+            android:text="@string/stamp_line"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_normal"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/btn_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp"
+            android:paddingTop="@dimen/margin_5dp" >
+
+            <TextView
+                android:id="@+id/tv_line_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/stamp_share"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_normal"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_share_face_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_large"
+        android:paddingTop="@dimen/padding_small" >
+
+        <ImageView
+            android:id="@+id/imv_face_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_stamp_facebook" />
+
+        <app.com.hss.cooking.magatama.stampcard.TextViewW6
+            android:id="@+id/tv_face_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_toRightOf="@id/imv_face_book"
+            android:text="@string/stamp_facebook"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_normal"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/btn_face_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp"
+            android:paddingTop="@dimen/margin_5dp" >
+
+            <TextView
+                android:id="@+id/tv_facebook_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/stamp_share"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_normal"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_share_twitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_large"
+        android:paddingTop="@dimen/padding_small" >
+
+        <ImageView
+            android:id="@+id/imv_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_stamp_twitter" />
+
+        <app.com.hss.cooking.magatama.stampcard.TextViewW6
+            android:id="@+id/tv_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_toRightOf="@id/imv_twitter"
+            android:text="@string/stamp_twitter"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_normal"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/btn_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp"
+            android:paddingTop="@dimen/margin_5dp" >
+
+            <TextView
+                android:id="@+id/tv_twitter_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/stamp_share"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_normal"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

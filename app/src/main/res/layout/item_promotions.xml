@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <app.com.hss.cooking.magatama.stampcard.TextViewW6
+        android:id="@+id/tv_using_stamp_sub_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:background="@drawable/layout_number_stamp"
+        android:text="@string/stamp_using_sub_one"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_normal"
+        android:textStyle="bold" />
+
+    <app.com.hss.cooking.magatama.stampcard.TextViewW3
+        android:id="@+id/tv_using_stamp_sub_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:text="@string/stamp_using_sub_two"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_normal" />
+
+    <RelativeLayout
+        android:id="@+id/ll_content_using"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingLeft="@dimen/padding_xlarge"
+        android:paddingRight="@dimen/padding_xlarge" >
+
+        <!-- "@dimen/height_dialog_content_promotion" -->
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/android:progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        <!--<TextView
+                android:id="@+id/tv_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressBar1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/msg_loading"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_sub" /> -->
+
+        <app.com.hss.cooking.magatama.stampcard.ResizableImageView
+            android:id="@+id/imv_stamp_using"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/photo_default_promot" />
+
+        <ImageView
+            android:id="@+id/imv_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/coupon_sumi"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_using_stamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imv_stamp_using"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:text="@string/stamp_using_button"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_normal" />
+    </RelativeLayout>
+
+</LinearLayout>

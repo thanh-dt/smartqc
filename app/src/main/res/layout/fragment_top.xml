@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/header_margin">
+
+    <ImageView
+        android:id="@+id/top_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--
+           <ViewFlipper
+               android:id="@+id/viewFlipper1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="142dp"
+                    android:layout_marginTop="0dp"
+                    android:numColumns="3"
+                    android:src="@drawable/sample_nara_img" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numColumns="3"
+                    android:src="@drawable/sample" />
+
+                <WebView
+                    android:id="@+id/webView2"
+                    android:layout_width="274dp"
+                    android:layout_height="142dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="0dp"
+                    android:background="@color/transparent" />
+                
+            </ViewFlipper>
+            -->
+
+            <!--
+           <magatama1.top.MarqueeView
+                    xmlns:marquee="http://schemas.android.com/apk/res/magatama1.activity"
+                    android:id="@+id/marquee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:textColor="@color/black" />
+			-->
+            <!--
+            <jp.co.hiropro.magatama1.top.MarqueeView
+                xmlns:app="http://jp.co.hiropro.magatama1.marquee_view"
+                android:id="@+id/marqueeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:background="#FF000000"
+                app:repeatLimit="3"
+                app:text="test"
+                app:textColor="#FFFFFFFF"
+                app:textMoveSpeed="15"
+                app:textSize="25sp" />
+            -->
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

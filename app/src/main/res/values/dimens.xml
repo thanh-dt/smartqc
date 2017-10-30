@@ -1,0 +1,70 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--
+         Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html
+    -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="margin_3dp">3dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
+    <dimen name="margin_60dp">60dp</dimen>
+    <dimen name="margin_80dp">80dp</dimen>
+    
+    <!-- News Start -->
+    <dimen name="news_icon_width">40dp</dimen>
+    <dimen name="news_icon_height">40dp</dimen>
+    <dimen name="news_img_width">300dp</dimen>
+    <dimen name="news_img_height">201dp</dimen>
+    <!-- News End -->
+    
+    <!-- Menu Start -->
+    <dimen name="menu_row_img_width">90dp</dimen>
+    <dimen name="menu_row_img_height">90dp</dimen>
+    <dimen name="menu_detail_img_width">300dp</dimen>
+    <dimen name="menu_detail_img_height">175dp</dimen>
+    <!-- Menu End -->
+    
+    <dimen name="header_margin">0dp</dimen>
+    <dimen name="footer_margin">47dp</dimen>
+    
+    <dimen name="imgge_slider_height">240dp</dimen>
+
+    <!-- Stamp card -->
+    <dimen name="padding_normal">15dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_large">25dp</dimen>
+    <dimen name="padding_xlarge">30dp</dimen>
+    <dimen name="padding_very_small">5dp</dimen>
+    <dimen name="text_size_sub">10sp</dimen>
+    <dimen name="text_size_title">12sp</dimen>
+    <dimen name="text_size_large">15sp</dimen>
+    <dimen name="text_size_xlarge">18sp</dimen>
+    <dimen name="text_size_very_small">8sp</dimen>
+    <dimen name="size_button_main">72sp</dimen>
+    <dimen name="size_button_height_main">35dp</dimen>
+    <dimen name="action_bar_height">47dp</dimen>
+    <dimen name="item_stamp_size">80dp</dimen>
+    <dimen name="promot_imageview_height">150dp</dimen>
+    <dimen name="promot_imageview_width">300dp</dimen>
+    <dimen name="stamp_dialog_choice_sex">220dp</dimen>
+    <dimen name="height_dialog_content_promotion">150dp</dimen>
+    <dimen name="width_dialog_content_promotion">300dp</dimen>
+    <dimen name="width_of_title_register">120dp</dimen>
+    <dimen name="padding_how_to_get_stamp">73dp</dimen>
+
+    <!-- Text Stamp -->
+    <dimen name="size_large">18sp</dimen>
+    <dimen name="size_title">16sp</dimen>
+    <dimen name="size_normal">14sp</dimen>
+    <dimen name="size_content">10sp</dimen>
+    <dimen name="height_policy_stamp">180dp</dimen>
+    
+</resources>

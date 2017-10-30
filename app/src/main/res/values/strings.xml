@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SHOP APPCOOKING</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="splash_btn_start">START</string>
+    <string name="splash_btn_regist">新規登録をする</string>
+    <string name="drawer_open">開く</string>
+    <string name="drawer_close">閉じる</string>
+
+    <!-- GCMIntentService START -->
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <!-- GCMIntentService END -->
+
+    <string name="title_activity_menu_detail_fragment">MenuDetailFragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_bbs_send_fragment">BbsSendFragment</string>
+    <string name="coupon_caution">ご利用条件は</string>
+
+    <string-array name="pref_array">
+        <item>北海道</item>
+        <item>青森県</item>
+        <item>岩手県</item>
+        <item>宮城県</item>
+        <item>秋田県</item>
+        <item>山形県</item>
+        <item>福島県</item>
+        <item>茨城県</item>
+        <item>栃木県</item>
+        <item>群馬県</item>
+        <item>埼玉県</item>
+        <item>千葉県</item>
+        <item>東京都</item>
+        <item>神奈川</item>
+        <item>新潟県</item>
+        <item>富山県</item>
+        <item>石川県</item>
+        <item>福井県</item>
+        <item>山梨県</item>
+        <item>長野県</item>
+        <item>岐阜県</item>
+        <item>静岡県</item>
+        <item>愛知県</item>
+        <item>三重県</item>
+        <item>滋賀県</item>
+        <item>京都府</item>
+        <item>大阪府</item>
+        <item>兵庫県</item>
+        <item>奈良県</item>
+        <item>和歌山</item>
+        <item>鳥取県</item>
+        <item>島根県</item>
+        <item>岡山県</item>
+        <item>広島県</item>
+        <item>山口県</item>
+        <item>徳島県</item>
+        <item>香川県</item>
+        <item>愛媛県</item>
+        <item>高知県</item>
+        <item>福岡県</item>
+        <item>佐賀県</item>
+        <item>長崎県</item>
+        <item>熊本県</item>
+        <item>大分県</item>
+        <item>宮崎県</item>
+        <item>鹿児島</item>
+        <item>沖縄県</item>
+    </string-array>
+
+    <string name="pref_spinner_prompt">都道府県の選択</string>
+
+    <string-array name="gender_array">
+        <item>男性</item>
+        <item>女性</item>
+    </string-array>
+
+    <string name="stamp_mobile_member">MOBILE MEMBERS</string>
+    <string name="stamp_main_content">モバイル会員証</string>
+    <string name="stamp_name_number">会員No. %1$s</string>
+    <string name="stamp_name_number_no_value">会員No. </string>
+    <string name="stamp_button_go_main">岸本 斉史</string>
+    <string name="stamp_button_small_go">様</string>
+    <string name="stamp_content">こちらの画面をスタッフにご提示下さい</string>
+    <string name="stamp_coopy_right"></string>
+    <string name="stamp_dialog_title">お店の人に見せて下さい</string>
+    <string name="stamp_dialog_edittext_one_hint">スタンプ数を入力</string>
+    <string name="stamp_dialog_edittext_two_hint">認証コードを入力</string>
+    <string name="stamp_dialog_button_name">スタンプを認証する</string>
+    <string name="stamp_dialog_tv_one">スタンプ</string>
+    <string name="stamp_dialog_tv_two">スタンプ認証コード</string>
+    <string name="stamp_how_title_one">お買い上げスタンプ</string>
+    <string name="stamp_how_title_two">アプリ起動でスタンプ</string>
+    <string name="stamp_how_title_three">SNSシェアでスタンプ</string>
+    <string name="stamp_how_sub_one">お買い上げ金額に応じたスタンプがもらえます。</string>
+    <string name="stamp_how_sub_two">一日一回、アプリを起動するごとに \n スタンプがもらえます。</string>
+    <string name="stamp_how_sub_three">LINE・facebook・twitterにシェアして頂き、\n来店時にシェア内容をお見せください。\nスタンプがもらえます。</string>
+    <string name="txt_1">1</string>
+    <string name="txt_2">2</string>
+    <string name="txt_3">3</string>
+    <string name="stamp_main_title">スタンプの 貯め方</string>
+    <string name="stamp_button_qr_code">QRコード読み取り</string>
+    <string name="stamp_main_sub_content">スタンプがたまると、自動で特典引換チケットが発行されます。 特典ご利用の際は、店員までお申し付け下さい。</string>
+    <string name="stamp_using_title">特典</string>
+    <string name="stamp_using_sub_one">消費チケット %1$s枚</string>
+    <string name="stamp_using_sub_two">お好きなフード %1$s品無料</string>
+    <string name="stamp_using_button">利用する</string>
+    <string name="stamp_share_title">このアプリを友達に紹介</string>
+    <string name="stamp_share_content">シェアでスタンプを獲得</string>
+    <string name="stamp_share">紹介する</string>
+    <string name="stamp_line">Line</string>
+    <string name="stamp_facebook">Facebook</string>
+    <string name="stamp_twitter">Twitter</string>
+    <string name="stamp_card">STAMP CARD</string>
+    <string name="stamp_no_user_example">100000</string>
+    <string name="stamp_main_title_one">スタンプカード有効期限</string>
+    <string name="stamp_main_content_one">有効期限なし</string>
+    <string name="stamp_main_title_two">獲得したチケット</string>
+    <string name="stamp_main_content_two">%1$s枚</string>
+    <string name="stamp_footer_title">注意事項</string>
+    <string name="stamp_footer_content">クーポンの併用はできません。また、１つのクーポンに付き 4名様まで適用可能です。</string>
+    <string name="stamp_default_date">04/20</string>
+    <string name="stamp_dialog_using_title">メッセージ</string>
+    <string name="stamp_dialog_using_content_one">特典を利用します</string>
+    <string name="stamp_dialog_using_content_two">よろしいでしょうか？</string>
+    <string name="stamp_dialog_using_content_three">※再度ご利用が出来なくなります</string>
+    <string name="stamp_dialog_using_content_four">ご利用の際は前画面をまず店員へお見せください</string>
+    <string name="stamp_dialog_ok">はい</string>
+    <string name="stamp_dialog_cancel">キャンセル</string>
+    <string name="msg_loading">ローディング...</string>
+    <string name="msg_no_line_app">この機能を利用できるようにLineアプリのインストールが必要で御座います。</string>
+    <string name="tv_register_title">ダウンロードありがとうございます</string>
+    <string name="tv_register_sub_title">あなたに合わせたサービスを提供するための質問にお答 え下さい 。 お店からの特別な特典を受ける場合に必要と なります。</string>
+    <string name="tv_title_sex">性別</string>
+    <string name="tv_sub_sex">タップして選択</string>
+    <string name="tv_title_birthday">誕生日</string>
+    <string name="tv_sub_title_register">※</string>
+    <string name="tv_sub_content_register">上記の内容は後から「セッティング」画面にていつで も変更することができます。</string>
+    <string name="tv_register_ok">登録</string>
+    <string name="tv_register_cancel">スキップ</string>
+    <string name="tv_name_register">名前(ニックネーム)</string>
+    <string name="tv_hint_edittext_register">タップして入力</string>
+
+    <string-array name="sex">
+        <item >タップして選択</item>
+        <item >男性</item>
+        <item >女性</item>
+    </string-array>
+    
+    <string name="error_lost_connect">インターネットに接続ことが出来ません。再度実施しますか？</string>
+    <string name="tv_choice_sex">性別を選択</string>
+    <string name="msg_something_happen">エラーが発生しました</string>
+    <string name="msg_success_register">登録されました。</string>
+    <string name="msg_empty_name">お名前をご入力してください</string>
+    <string name="msg_empty_birth_day">生年月日をご入力してください。</string>
+    <string name="msg_not_choice_sex">性別をご選択してください</string>
+    <string name="title_facebook_login">facebook_login</string>
+    <string name="facebook_app_id">815585251843778</string>
+    <string name="register_fail">今登録が出来ません。再度してみますか？</string>
+    <string name="user_has_registed">このデバイスが登録されました。</string>
+    <string name="msg_error_need_register">この機能を利用する前に、ご登録してください。</string>
+    <string name="error_using_promot_not_enough">チケットが足りません。</string>
+    <string name="error_using_promot">今チケットは使用不可となります。再度使用してみますか？</string>
+    <string name="msg_error_get_info_card">会員情報が確認出来ません。再度実施してみますか？\n会員登録されていない場合、ご登録後ご利用頂けます。</string>
+    <string name="msg_add_stamp_daily">スタンプは  %1$s 枚得られました。</string>
+    <string name="msg_some_thing_wrong_try_again">エラーが発生しました 。 再度してみますか？</string>
+    <string name="msg_no_connect_internet">インターネットに接続ことが出来ません。</string>
+    <string name="msg_using_promot">クーポンを利用します。</string>
+    <string name="msg_no_promot">クーポンは御座いません。</string>
+    <string name="msg_update_info">情報を更新します。</string>
+    <string name="msg_cannot_share">シェアが出来ません。</string>
+    <string name="tv_title_config_setting">ユーザー情報</string>
+    <string name="btn_update_info">ユーザー情報更新</string>
+    <string name="share_title_sns">[%1$s]の公式アプリをインストールすると色々な情報が受けれます。</string>
+    <string name="msg_error_need_download_twitter">この機能を使用できるように、ツイッターのダウンロードが必要になります。</string>
+    <string name="msg_qr_code_of_other_store">このQRコードは当店に適合されていません。</string>
+    <string name="btn_ok">OK</string>
+    <string name="msg_share_facebook_success">シェアが完了しました。</string>
+    <string name="msg_share_fail">シェアができません。</string>
+    <string name="msg_cannot_input_more">３０文字以内で、ご入力ください。</string>
+    <string name="permission_camera_rationale">Camera permission is needed to show the camera preview.</string>
+    <string name="permissions_not_granted">Permissions were not granted.</string>
+
+</resources>
